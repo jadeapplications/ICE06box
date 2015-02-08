@@ -1,0 +1,43 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="comment_comment" id="2" x="1" y="1">
+    <field name="TEXT">ICE06box - Repeat Forwards and Turns Four Times</field>
+    <next>
+      <block type="controls_repeat" id="9" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="16">
+            <field name="NUM">4</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_forward" id="26">
+            <next>
+              <block type="robot_delay" id="28" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="35">
+                    <field name="NUM">1500</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_left" id="45">
+                    <next>
+                      <block type="robot_delay" id="46" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="47">
+                            <field name="NUM">1300</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="57"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
